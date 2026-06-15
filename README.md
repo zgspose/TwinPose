@@ -19,6 +19,12 @@ Extensive experiments demonstrate that **TwinPose achieves state-of-the-art perf
 
 ![TwinPose](./static/images/twinpose.jpg)
 
+## Perspective and Broader Impact
+
+TwinPose reflects our observation-first view of multi-view 3D motion capture: the quality of 2D observations from each camera determines the upper bound of 3D pose estimation. The goal of TwinPose is to make this upper bound easier to approach in practice. By building person-specific 3D pose subspaces, TwinPose avoids heavy global optimization, supports arbitrary 2D human pose detectors, and provides a scalable framework for future improvements driven by stronger 2D pose estimation models.
+
+This framework also connects naturally with our broader research on video-based 2D pose estimation, including **[DSTA](https://github.com/zgspose/DSTA)**, **[PAVE-Net](https://github.com/zgspose/PAVENet)**, and **[TAR-ViTPose](https://github.com/zgspose/TARViTPose)**. These works systematically explore how temporal information can be used to improve 2D pose estimation, with the hope of moving beyond the dominant single-frame paradigm toward a more robust video-based paradigm.
+
 ## Quantitative Performance
 
 with the fastest per-frame time (e.g., 0.92 ms on Shelf) and full flexibility to work with any 2D pose detector (e.g, HRNet, RTMO, and OpenPose).
