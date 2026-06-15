@@ -57,11 +57,11 @@ with the fastest per-frame time (e.g., 0.92 ms on Shelf) and full flexibility to
     <tr><th>Method</th><th>2D Detector</th><th>Precision (%)</th><th>Recall (%)</th></tr>
   </thead>
   <tbody>
-    <tr><td colspan="4"><strong>Methods tightly coupled to the bottom‑up detector OpenPose</strong></td></tr>
+    <tr><td colspan="4"><em>Methods tightly coupled to the bottom‑up detector OpenPose</em></td></tr>
     <tr><td>Zhang et al. [2020]</td><td>OpenPose</td><td>88.5</td><td>90.2</td></tr>
     <tr><td>Dong et al. [2021]</td><td>OpenPose</td><td>90.1</td><td>89.0</td></tr>
     <tr><td>Zhou et al. [2022]</td><td>OpenPose</td><td>92.0</td><td>91.2</td></tr>
-    <tr><td colspan="4"><strong>Detector‑agnostic methods (any 2D pose detector)</strong></td></tr>
+    <tr><td colspan="4"><em>Detector‑agnostic methods (any 2D pose detector)</em></td></tr>
     <tr><td>Dong et al. [2019]</td><td>OpenPose</td><td>78.5</td><td>77.1</td></tr>
     <tr><td>Dong et al. [2019]</td><td>HRNet</td><td>84.9</td><td>84.9</td></tr>
     <tr><td>Dong et al. [2019]</td><td>RTMO</td><td>85.4</td><td>85.5</td></tr>
@@ -87,7 +87,7 @@ with the fastest per-frame time (e.g., 0.92 ms on Shelf) and full flexibility to
 
 ## Qualitative Results
 
-**Comparison with traditional skeleton-level association.** Traditional methods such as Dong et al. [2019] indiscriminately use all joints and bones, leading to incorrect associations (red boxes). TwinPose preserves only cross-view geometrically consistent joints, substantially improving robustness.
+**Comparison with skeleton-level association method [Dong et al. 2019].** Traditional skeleton-level association approaches indiscriminately use all joints and bones, leading to incorrect associations (red boxes). TwinPose preserves only cross-view geometrically consistent joints, substantially improving robustness.
 
 ![TwinPose](./static/images/compare_MVPose.jpg)
 
