@@ -111,15 +111,26 @@ https://github.com/user-attachments/assets/3a5020d2-9cf9-4019-88bd-4c775576d548
 If you find our paper useful in your research, please consider citing:
 
 ```bibtex
+@article{yang2026twinpose,
+  title         = {TwinPose: Person-Specific Subspaces for Multi-View 3D Pose Estimation},
+  author        = {Yang, Wenwu and He, Tianyi and Ding, Jiwei and Wang, Xun and Zhang, Rong and Zhou, Kun},
+  journal       = {ACM Transactions on Graphics},
+  volume        = {45},
+  number        = {4},
+  articleno     = {61},
+  year          = {2026},
+  note          = {SIGGRAPH 2026 Journal Track}
+}
+
 @article{yang2023lightweight,
-  title = {Lightweight Multi-Person Motion Capture System in the Wild},
-  author = {Yang, Wenwu and Li, Yue and Xing, Shuai and Cai, Jiahang and Wang, Xun},
-  journal = {SCIENTIA SINICA Informationis},
-  volume = {53},
-  number = {11},
-  pages = {2230--2249},
-  year = {2023},
-  note = {In Chinese}
+  title         = {Lightweight Multi-Person Motion Capture System in the Wild},
+  author        = {Yang, Wenwu and Li, Yue and Xing, Shuai and Cai, Jiahang and Wang, Xun},
+  journal       = {SCIENTIA SINICA Informationis},
+  volume        = {53},
+  number        = {11},
+  pages         = {2230--2249},
+  year          = {2023},
+  note          = {In Chinese}
 }
 ```
 
