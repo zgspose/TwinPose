@@ -6,6 +6,7 @@
 
 - **2026-05-06**: 🎉 TwinPose has been accepted to **SIGGRAPH 2026 Journal Track** (ACM Transactions on Graphics)!
 
+- **2024-11-01**: 🚀 TwinPose was successfully developed and integrated into our self-developed real-time multi-view motion capture system.
 
 ## Introduction
 
@@ -20,7 +21,7 @@ Extensive experiments demonstrate that **TwinPose achieves state-of-the-art perf
 
 ## Quantitative Performance
 
-with the fastest per-frame time (e.g., 0.92 ms on Shelf) and full flexibility to work with any 2D detector (e.g, HRNet, RTMO, and OpenPose).
+with the fastest per-frame time (e.g., 0.92 ms on Shelf) and full flexibility to work with any 2D pose detector (e.g, HRNet, RTMO, and OpenPose).
 
 **Quantitative comparison on the Shelf dataset.**
 
@@ -29,26 +30,25 @@ with the fastest per-frame time (e.g., 0.92 ms on Shelf) and full flexibility to
     <tr><th>Method</th><th>A1</th><th>A2</th><th>A3</th><th>Avg</th><th>Time (ms)</th></tr>
   </thead>
   <tbody>
-    <tr><td>Tanke and Gall [2019]†#</td><td>99.8</td><td>90.0</td><td>98.0</td><td>96.0</td><td>N/A</td></tr>
-    <tr><td>Bridgeman et al. [2019]†</td><td>99.3</td><td>91.6</td><td>97.6</td><td>96.2</td><td>9.1</td></tr>
-    <tr><td>Dong et al. [2019]</td><td>98.8</td><td>94.1</td><td>97.8</td><td>96.9</td><td>90</td></tr>
-    <tr><td>Chen et al. [2020a]</td><td>99.6</td><td>93.2</td><td>97.5</td><td>96.8</td><td>3.08</td></tr>
-    <tr><td>Tu et al. [2020]*</td><td>99.3</td><td>94.1</td><td>97.6</td><td>97.0</td><td>333</td></tr>
-    <tr><td>Huang et al. [2020]*</td><td>98.8</td><td>96.2</td><td>97.2</td><td>97.4</td><td>640</td></tr>
-    <tr><td>Zhang et al. [2020]†</td><td>99.0</td><td>96.2</td><td>97.6</td><td>97.6</td><td>31.9</td></tr>
-    <tr><td>Dong et al. [2021]</td><td>99.1</td><td>93.5</td><td>98.1</td><td>96.9</td><td>N/A</td></tr>
-    <tr><td>Wang et al. [2021]*</td><td>99.3</td><td>95.1</td><td>97.8</td><td>97.4</td><td>~170</td></tr>
-    <tr><td>Wu et al. [2021]</td><td>99.3</td><td>96.5</td><td>97.3</td><td>97.7</td><td>~48.8</td></tr>
-    <tr><td>Reddy et al. [2021]†*</td><td>99.1</td><td>96.3</td><td>98.3</td><td>97.9°</td><td>&gt;333</td></tr>
-    <tr><td>Lin and Lee [2021]</td><td>99.3</td><td>96.5</td><td>98.0</td><td>97.9</td><td>23.4</td></tr>
-    <tr><td>Zhang et al. [2021]†</td><td>99.5</td><td><strong>97.0</strong></td><td>97.8</td><td>98.1</td><td>&gt;31.9</td></tr>
-    <tr><td>Zhou et al. [2022]</td><td>99.5</td><td>96.7</td><td>98.2</td><td>98.1</td><td>2.94</td></tr>
-    <tr><td>Choudhury et al. [2023]†*</td><td>99.0</td><td>96.3</td><td>98.2</td><td>97.8°</td><td>N/A</td></tr>
-    <tr><td>Liao et al. [2024]*</td><td>99.5</td><td>96.8</td><td>97.8</td><td>98.0</td><td>210</td></tr>
-    <tr><td><strong>TwinPose (Ours)</strong></td><td><strong>99.8</strong></td><td>96.2</td><td><strong>98.5</strong></td><td><strong>98.2</strong></td><td><strong>0.92</strong></td></tr>
+    <tr><td>Tanke and Gall [2019]</em></td><td>99.8</em></td><td>90.0</em></td><td>98.0</em></td><td>96.0</em><td>N/A</em></tr>
+    <tr><td>Bridgeman et al. [2019]</em></td><td>99.3</em></td><td>91.6</em></td><td>97.6</em></td><td>96.2</em><td>9.1</em></tr>
+    <tr><td>Dong et al. [2019]</em></td><td>98.8</em></td><td>94.1</em></td><td>97.8</em></td><td>96.9</em><td>90</em></tr>
+    <tr><td>Chen et al. [2020a]</em></td><td>99.6</em></td><td>93.2</em></td><td>97.5</em></td><td>96.8</em><td>3.08</em></tr>
+    <tr><td>Tu et al. [2020]</em></em></td><td>99.3</em></td><td>94.1</em></td><td>97.6</em></td><td>97.0</em><td>333</em></tr>
+    <tr><td>Huang et al. [2020]</em></em></td><td>98.8</em></td><td>96.2</em></td><td>97.2</em></td><td>97.4</em><td>640</em></tr>
+    <tr><td>Zhang et al. [2020]</em></em></td><td>99.0</em></td><td>96.2</em></td><td>97.6</em></td><td>97.6</em><td>31.9</em></tr>
+    <tr><td>Dong et al. [2021]</em></em></td><td>99.1</em></td><td>93.5</em></td><td>98.1</em></td><td>96.9</em><td>N/A</em></tr>
+    <tr><td>Wang et al. [2021]</em></em></em></td><td>99.3</em></td><td>95.1</em></td><td>97.8</em></td><td>97.4</em><td>~170</em></tr>
+    <tr><td>Wu et al. [2021]</em></em></em></td><td>99.3</em></td><td>96.5</em></td><td>97.3</em></td><td>97.7</em><td>~48.8</em></tr>
+    <tr><td>Reddy et al. [2021]</em></em></em></em></td><td>99.1</em></em></td><td>96.3</em></em></td><td>98.3</em></em></td><td>97.9</em></em></td><td>>333</em></em></tr>
+    <tr><td>Lin and Lee [2021]</em></em></em></td><td>99.3</em></em></td><td>96.5</em></em></td><td>98.0</em></em></td><td>97.9</em></em></td><td>23.4</em></em></tr>
+    <tr><td>Zhang et al. [2021]</em></em></em></em></td><td>99.5</em></em></td><td><strong>97.0</strong></em></em></td><td>97.8</em></em></td><td>98.1</em></em></td><td>>31.9</em></em></tr>
+    <tr><td>Zhou et al. [2022]</em></em></em></em></td><td>99.5</em></em></td><td>96.7</em></em></td><td>98.2</em></em></td><td>98.1</em></em></td><td>2.94</em></em></tr>
+    <tr><td>Choudhury et al. [2023]</em></em></em></em></em></td><td>99.0</em></em></td><td>96.3</em></em></td><td>98.2</em></em></td><td>97.8</em></em></td><td>N/A</em></em></tr>
+    <tr><td>Liao et al. [2024]</em></em></em></em></em></td><td>99.5</em></em></td><td>96.8</em></em></td><td>97.8</em></em></td><td>98.0</em></em></td><td>210</em></em></tr>
+    <tr><td><strong>TwinPose (Ours)</strong></em></em></em></em></em></td><td><strong>99.8</strong></em></em></em></em></em></td><td>96.2</em></em></em></em></em></td><td><strong>98.5</strong></em></em></em></em></em></td><td><strong>98.2</strong></em></em></em></em></em></td><td><strong>0.92</strong></em></em></em></em></em></tr>
   </tbody>
 </table>
-
 
 **Quantitative comparison on the 4DA dataset.**
 
@@ -91,7 +91,7 @@ with the fastest per-frame time (e.g., 0.92 ms on Shelf) and full flexibility to
 
 ![TwinPose](./static/images/compare_MVPose.jpg)
 
-**Comparison with the state-of-the-art 4DA method.** Global optimization in 4DA causes incorrect cross-person associations (red boxes). TwinPose performs person-specific inference in pose subspaces, enhancing both robustness and efficiency.
+**Comparison with the state-of-the-art 4DA method [Zhang et al. 2020].** Global optimization in 4DA causes incorrect cross-person associations (red boxes). TwinPose performs person-specific inference in pose subspaces, enhancing both robustness and efficiency.
 
 ![TwinPose](./static/images/compare_4DA.jpg)
 
@@ -102,28 +102,27 @@ of body, hands, feet, and facial keypoints.
 
 ## Video Demo
 
-For a detailed video demonstration, please see [this YouTube video](https://youtu.be/XLDARAOr0j0).
-<div style="text-align: center;">
-  <img 
-    width="60%" 
-    src="https://github.com/user-attachments/assets/e4b58e0f-7f7e-435e-9403-63a6f373e825"
-  />
-</div>
+For a complete video demonstration of our methods, please see [this YouTube video](https://youtu.be/XLDARAOr0j0).
 
+https://github.com/user-attachments/assets/3a5020d2-9cf9-4019-88bd-4c775576d548
 
 ## Citations
 
 If you find our paper useful in your research, please consider citing:
 
 ```bibtex
-@article{yang2026twinpose,
-  title         = {TwinPose: Person-Specific Subspaces for Multi-View 3D Pose Estimation},
-  author        = {Yang, Wenwu and He, Tianyi and Ding, Jiwei and Wang, Xun and Zhang, Rong and Zhou, Kun},
-  journal       = {ACM Transactions on Graphics},
-  volume        = {45},
-  number        = {4},
-  articleno     = {61},
-  year          = {2026},
-  note          = {SIGGRAPH 2026 Journal Track}
+@article{yang2023lightweight,
+  title = {Lightweight Multi-Person Motion Capture System in the Wild},
+  author = {Yang, Wenwu and Li, Yue and Xing, Shuai and Cai, Jiahang and Wang, Xun},
+  journal = {SCIENTIA SINICA Informationis},
+  volume = {53},
+  number = {11},
+  pages = {2230--2249},
+  year = {2023},
+  note = {In Chinese}
 }
 ```
+
+## Acknowledgement
+
+We thank Tianyi He for implementing the TwinPose algorithm; Jiwei Ding for his assistance with the quantitative and qualitative experiments; Yihui Sun and Bin Zhou for their assistance with the experiments on whole-body 3D pose estimation and learning-based methods; Siying Chen for video editing and homepage development; Xiongbin Lin for video editing; and all participants who contributed to the motion capture data collection. 
